@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    Username:<input type="text" id="text2">
+    Password:<input type="text" id="text">
+    <button id="btn">Submit</button>
+</body>
+<script>
+    var arr=[
+        {id:"1" ,Name:"shreya",Email:"@264",Password:"1234",City:"madhubani",Role:"Admin"},
+        {id:"2" ,Name:"namrata",Email:"@294",Password:"1234",City:"madhubani",Role:"Guest"},
+        {id:"3" ,Name:"rupali",Email:"@238",Password:"1234",City:"madhubani",Role:"Guest"},
+        {id:"4" ,Name:"Anshu",Email:"@234",Password:"1234",City:"madhubani",Role:"Guest"},
+    ]
+
+    $(document).ready(function(){
+        display();
+        $("#submit").click(function(){
+            var user = $('#text2').val();
+            if(Username ==obj.name && Password==obj.name){
+
+          
+            return;
+            }
+          
+         
+           
+
+        });
+    });
+   
+        $("#submit").click(function(){
+            var user = $('#text1').val();
+          
+          
+           
+           
+
+        });
+        function display(){
+    var table="<table border=1px  'solid black'><tr><th>ID</th><th>Name</th><th>Email</th><th>Password</th><th>City</th></tr>"
+    products.forEach(element => {
+        table+="<tr><td>"+
+                element.id+
+                "</td><td>"+
+                element.name+
+                "</td><td>"+
+                element.email+
+                "</td><td>"+
+                element.password+
+                "</td><td>"+
+                
+
+                "</td></tr>"
+                document.getElementById("list").innerHTML= table
+        
+    });
+    table+= "</table>"
+        }
+</script>
+</html>
